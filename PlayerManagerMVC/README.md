@@ -41,12 +41,6 @@ classDiagram
         +Compare(Player p1, Player p2) int
     }
 
-    enum PlayerOrder {
-        ByScore
-        ByName
-        ByNameReverse
-    }
-
     Program --> PlayerController : uses
     PlayerController --> PlayerView : controls
     PlayerController --> Player : manages
